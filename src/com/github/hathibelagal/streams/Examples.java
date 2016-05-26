@@ -26,7 +26,7 @@ public class Examples {
 		// Convert it into a Stream
 		Stream<Integer> myStream = myList.stream();
 		
-        // Print the contents of the stream
+        	// Print the contents of the stream
 		myStream.forEach(e -> System.out.println(e));
 	}
 	
@@ -37,7 +37,7 @@ public class Examples {
 		// Convert it into a Stream
 		Stream<Integer> myStream = Arrays.stream(myArray);
 		
-        // Print the contents of the stream
+        	// Print the contents of the stream
 		myStream.forEach(e -> System.out.println(e));
 	}
 	
@@ -51,7 +51,7 @@ public class Examples {
 		String[] myNewArray =
 	             myNewStream.toArray(String[]::new);
 
-        // Print the contents of the new array		
+        	// Print the contents of the new array		
 		for(String s:myNewArray)
 			System.out.println(s);
 	}
@@ -60,10 +60,10 @@ public class Examples {
 		String[] myArray = new String[]{"bob", "alice", "paul", "ellie"};
 		
 		String[] myNewArray = Arrays.stream(myArray)
-	      .filter(s -> s.length() > 4)
-	      .toArray(String[]::new);
+	      			.filter(s -> s.length() > 4)
+	      			.toArray(String[]::new);
 		
-        // Print the contents of the new array
+        	// Print the contents of the new array
 		for(String s:myNewArray)
 			System.out.println(s);
 	}
@@ -72,7 +72,7 @@ public class Examples {
 		int myArray[] = { 1, 5, 8 };
 		int sum = Arrays.stream(myArray).sum();
 
-        // Print the sum
+        	// Print the sum
 		System.out.println(sum);
 	}
 	
@@ -81,7 +81,7 @@ public class Examples {
 		String result = Arrays.stream(myArray)
 		                .reduce("", (a,b) -> a + b);
 		
-        // Print the result
+        	// Print the result
 		System.out.println(result);
 	}
 
